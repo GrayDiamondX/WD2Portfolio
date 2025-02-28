@@ -1,0 +1,259 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	background:#cad2de;
+	font-family:Arial;
+}
+
+
+#container {
+
+.topnav {
+  overflow: hidden;
+  background-color:#a2abba;
+  padding:10px 0px 10px 10px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+header {
+	text-align:center;
+	padding:10px 0px;
+	background:white;
+	border-bottom:1.5px solid black;
+}
+
+h1 {
+	font-size:40px;
+	color:#8aa9db;
+	margin:20px;
+}
+
+h2 {
+	font-size:20px;
+	color:#8aa9db;
+	margin:10px;
+}
+
+figure {
+	margin:20px;
+	text-align:center;
+	animation-iteration-count: 3;
+	transition: all 500ms;
+}
+
+figcaption {
+	font-size:20px;
+	color:white;
+	margin-top:5px;
+	position:absolute;
+	transition:all 500ms;
+}
+
+footer:hover {
+	background-color:#f2e8ae;
+	color:red;
+	transform:scale(3) translate(50px,50px) rotate(1800deg);
+}
+}
+
+.banner {
+	width:600px;
+}
+
+h1.ugh {
+	padding:25px;
+	text-align:center;
+
+	animation:bug 10s infinite alternate;
+	animation-delay: 5s;
+	animation-iteration-count: 3;
+	transition: all 500ms;
+}
+
+h1.ugh:hover {
+	transform:scaleY(5.5);
+	animation-name:uuuggghhh;
+	animation: uuuggghhh 10s infinite alternate;
+}
+
+@keyframes uuuggghhh {
+	0% {color:red;}
+	25% {
+		color:yellow;
+		transform:2s;
+	}
+	50% {color:green;}
+	75% {color:blue;}
+	100% {color:purple;}
+}
+
+@keyframes bug {
+	0% {color:red}
+	25% {color:purple}
+	50% {color:yellow}
+	75% {color:green}
+	100% {color:cyan}
+}
+
+p.bruh {
+	background-color:white;
+	padding:10px;
+	animation:dino 4s infinite alternate;
+	animation-delay: 5s;
+}
+
+@keyframes dino {
+	0% {background:red}
+	25% {
+		background:purple;
+		transform:2s;
+	}
+	50% {background:yellow}
+	75% {background:green}
+	100% {background:cyan}
+}
+
+figure:hover {
+	transform:scale(1.5) rotate(1800deg);
+}
+
+h2.hhh {
+	background-color:white;
+	padding-left:10px;
+	transition:all 500ms;
+	animation-delay:10s;
+	animation-iteration-count: 3;
+	transition: all 500ms;
+}
+
+h2.hhh:hover { 
+	background-color:#183a6b;
+	transform:scale(3) rotate(1800deg);
+}
+
+footer {
+	background:#88b4db;
+	padding:10px;
+	position:absolute;
+	transition:all 500ms;
+}
+
+footer:hover {
+	background-color:#f2e8ae;
+	color:red;
+	transform:scale(3) translate(50px,50px) rotate(1800deg);
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left:8px;
+}
+
+.button:hover {
+	transform:rotate(360deg) translate(50px,50px) scale(1.3,1.3);
+	background-color: #3e8e41
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for portrait tablets and large phone screens.  */
+@media all and (min-width: 600px) {
+	
+	
+	
+	
+} /* closes 600px+ */
+
+
+
+/* Minimum width for landscape laptops. */
+@media all and (min-width: 768px) {
+	
+div#container {
+	width: 700px;
+	margin: auto;
+}	
+	
+	
+} /* closes 768px+ */
+
+
+
+/* Minimum width for larger tablets, laptops and desktops. */
+@media all and (min-width: 992px) {
+	
+	
+	
+	
+} /* closes 992px+ */
+
+
+
+/* Minimum width for larger desktops. */
+@media all and (min-width: 1200px) {
+	
+	
+	
+	
+} /* closes 1200px+ */
+
+
+

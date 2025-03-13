@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>jQuery Makeover</title>
+	
+	<link rel="stylesheet" href="css/style 5.css">	
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+<header>
+	<h1>jQuery Switch</h1>
+</header>
+
+<section>
+
+<button>Night!</button>
+
+<p id="Dark">Rises the Moon ~ <br>
+The Night brings the quiet, the stars, and sleep.
+<br>
+Don't you just love the night? During the night, the moon is out, its quiet, peaceful, and best of all, the stars are out. It's not like the night is the bad to the day's good, they're BOTH great! During the night, people are asleep, some people stay up playing games with friends, and the moonlight is beautiful. Who wouldn't love the night?</p>
+
+<figure>
+	<img id="Nighttime" src="img/Nighttime.png" alt="img2">
+</figure>
+</section>
+
+
+<section>
+
+<button>Day!</button>
+
+<p id="Light"><b>Here Comes the Sun! <br>
+The Day bring light, sound, and everyone is awake!
+<br>
+Don't you just love the day? During the day, the sun is out, it's warm outside, you can see in the day, the birds are chirping, and everyone is awake! During the summer is one of the best times to be outside! Go to the beach with family, go to the mall with friends, or stay at home and relax outside! Who wouldn't love the day?!</b></p>
+
+<figure>
+	<img id="Daytime" src="img/Daytime.png" alt="img1">
+</figure>
+</section>
+
+
+
+</article>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+<footer>
+<p>&#169; Megan Oh, 2025</p>
+</footer>
+  </div><!-- close "container" -->
+  
+
+  <!-- Link to jQuery on Google Hosted Libraries-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+$(document).ready(function() {
+
+
+$('p').hide();
+
+$('button').click(function() {
+	$(this).next().slideDown(1500,function() {
+			$(this).css('background','#f7c174');
+			$('body').toggleClass('Nightcolor');
+			$(this).text();
+	});//close callback function
+}); //close click function
+
+
+
+}); //close .ready()
+</script>
+
+
+</body>
+	
+</html> 

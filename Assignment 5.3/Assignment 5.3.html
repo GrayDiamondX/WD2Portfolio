@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>jQuery Makeover</title>
+	
+	<link rel="stylesheet" href="css/style 5.3.css">	
+
+
+</head>
+
+<body>
+
+  <div id="container">
+
+<main>
+
+<section id="Sol">
+
+<header>
+	<h1>༉‧₊˚. Good Day! *ೃ༄</h1>
+</header>
+
+<figure>
+	<img id="Daytime" src="img/Daytime.png" alt="img1">
+</figure>
+
+<p id="Light"><b>Here Comes the Sun!<br>
+The Day bring light, sound, and everyone is awake!
+<br>
+Don't you just love the day? During the day, the sun is out, it's warm outside, you can see in the day, the birds are chirping, and everyone is awake! During the summer is one of the best times to be outside! Go to the beach with family, go to the mall with friends, or stay at home and relax outside! Who wouldn't love the day?!</b></p>
+
+<button id="Fireflyinfo"><a><img src="./img/Firefly gif.gif" alt="Buzz" width="180px"></a></button>
+
+</section>
+
+<section id="Lun">
+
+<header>
+	<h1>‧͙⁺˚*･༓☾ Good Night! *+:｡.｡</h1>
+</header>
+
+	<figure>
+	<img id="Nighttime" src="img/Nighttime.png" alt="img2">
+</figure>
+
+<p class="Dark">Rises the Moon ~ <br>
+The Night brings the quiet, the stars, and sleep.
+<br>
+Don't you just love the night? During the night, the moon is out, its quiet, peaceful, and best of all, the stars are out. It's not like the night is the bad to the day's good, they're BOTH great! During the night, people are asleep, some people stay up playing games with friends, and the moonlight is beautiful. Who wouldn't love the night?</p>
+
+<button id="Beebutton"><a><img src="./img/Minecraft Bee.gif" alt="Buzz" width="75%"></a></button>
+
+</section>
+</main>
+</div>
+</body>
+</html>
+
+
+
+<footer>
+<p>&#169; Megan Oh, 2025<br>Pictures taken by me</p>
+</footer>
+  </div><!-- close "container" -->
+  
+
+  <!-- Link to jQuery on Google Hosted Libraries-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+$(document).ready(function() {
+
+$('#Lun').hide();
+
+$("#Fireflyinfo").click(function(){
+	$("#Sol").hide(1000, function(){
+		$('#Lun').show(1000, function(){
+			$("body").css('background', '#250861',).css('color','#4ea2fc');
+		});
+	});
+});
+
+$("Beebutton").click(function(){
+	$("#Lun").hide(1000, function(){
+		$('#Sol').show(1000, function(){
+			$("body").css('background', '#8adcff',).css('color','#33e1ff');
+		});
+	});
+});
+
+
+
+}); //close .ready()
+</script>
+
+
+</body>
+	
+</html> 

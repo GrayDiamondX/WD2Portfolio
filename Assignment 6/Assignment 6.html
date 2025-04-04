@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Flowers</title>
+	
+	<link rel="stylesheet" href="css/style 6.css">	
+	
+</head>
+
+<header>
+	<h1>Pretty Flowers</h1>
+	<h2>Photos I've taken over the years</h2>
+</header>
+
+
+<body>
+
+<div id="container">
+
+	<div id="Home2Pinks"></div>
+
+<section if="One">
+	<p>Many of these flowers were taken around my home! They're usually pink and white, but sometimes red ones will bloom! I started taking these pictures since 2019 but I'll show some of the ones I really like! This tree shows the two kinds of Pinks to bloom!</p>
+</section>
+
+	<div id="Disney2"><!--<p>***Message***</p>-->
+		<h1 id="text">`✦ˑ𓂃⊹Magical!</h1>
+	</div>
+
+<section id="Two">
+ <p>This is from Disneyland and I thought these were SO pretty! They look like pink bell flowers, but on threes. I had a bit of a hard time getting this because there were so many people.</p>
+</section>
+
+<div id="Grandparents">hi</div>
+
+<section id="Three">
+ <p>These yellow ones are in my grandparent's front yard! I love how the petals fold outward so delicately! So beautiful!</p>
+</section>
+
+	<div id="SanDiego1"></div>
+
+<section id="Four">
+ <p>I don't remember where we were, but I thought these hot pink ones were so interesting! The white parts in the center where the pollen is, is so strange but pretty!</p>
+</section>
+
+<footer>
+	<p>&#169; Megan Oh, 2025. All rights reserved</p>
+</footer>
+
+</div>
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google Hosted Libraries-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1jquery.min.js"></script>
+  <script>
+$(document).ready(function() {
+
+$(window).scroll(function() {
+	var windowPosition = $(window).scrollTop();
+
+	//transition
+	if(windowPosition>600) {
+		$('#Three').addClass('slide');
+	} else {
+		$('#Three').removeClass('slide');
+	};
+	
+}); //close .ready()
+</script>
+
+
+</body>
+	
+</html> 
